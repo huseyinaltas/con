@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteCRM Regression Automation" verbose="2">
+
+	<test name="Smoke Test">
+		<classes>
+			<class name ="com.conceptsis.Runners.CukesRunner"></class>
+		</classes>
+	</test>
+
+</suite>

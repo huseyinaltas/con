@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">The user is on the page &quot;url&quot; (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I send the credantials to the Application (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should be able to login to the page (FAILED : 11s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">if the login functionality fails (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">send an email to the admin (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15763" started-at="2018-10-10T05:30:55Z" finished-at="2018-10-10T05:31:11Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.conceptsis.Runners.CukesRunner@369f73a2]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="15763" started-at="2018-10-10T05:30:55Z" finished-at="2018-10-10T05:31:11Z">
+      <class name="com.conceptsis.Runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.conceptsis.Runners.CukesRunner@369f73a2]" name="setUpClass" is-config="true" duration-ms="257" started-at="2018-10-10T05:30:55Z" finished-at="2018-10-10T05:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.conceptsis.Runners.CukesRunner@369f73a2]" name="runScenario" duration-ms="15439" started-at="2018-10-10T05:30:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-10-10T05:31:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://grades.es.gsastl.org/Dashboard] but found [https://grades.es.gsastl.org/Dashboard.aspx]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://grades.es.gsastl.org/Dashboard] but found [https://grades.es.gsastl.org/Dashboard.aspx]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.conceptsis.Stepdefinitions.LoginPage_StepDefinitions.i_should_be_able_to_login_to_the_page(LoginPage_StepDefinitions.java:47)
+at ✽.I should be able to login to the page(src/test/java/Future/SmokeTestFutureFiles.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">The user is on the page &quot;url&quot; (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I send the credantials to the Application (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should be able to login to the page (FAILED : 11s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">if the login functionality fails (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">send an email to the admin (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.conceptsis.Runners.CukesRunner@369f73a2]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2018-10-10T05:31:11Z" finished-at="2018-10-10T05:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.conceptsis.Runners.CukesRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
